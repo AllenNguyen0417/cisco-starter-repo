@@ -1,0 +1,10 @@
+.bannerContainer {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+.bannerText {
+  color: white;
+  font-weight: bold;
+}

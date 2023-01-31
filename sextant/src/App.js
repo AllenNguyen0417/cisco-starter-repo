@@ -1,27 +1,18 @@
+import React, { Component } from "react";
 import "./App.css";
+import Banner from "./Banner";
+import Exhibit from "./Exhibit";
 
-const Banner = () => {
-  return (
-    <div style={styles.bannerContainer}>
-      <h1 style={styles.bannerText}>IP's latency information</h1>
-    </div>
-  );
-};
-
-const styles = {
-  bannerContainer: {
-    backgroundColor: "lightgray",
-    padding: "20px",
-    textAlign: "center",
-  },
-  bannerText: {
-    color: "white",
-    fontWeight: "bold",
-  },
-};
-
-function App() {
-  return <Banner></Banner>;
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Banner bannerText="Sextant" />
+        <Exhibit name="Exhibit component"></Exhibit>
+        <Exhibit children="Exhibit component"></Exhibit>
+      </div>
+    );
+  }
 }
 
 export default App;
