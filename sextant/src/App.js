@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Banner";
 import Exhibit from "./Exhibit";
 import Address from "./Address";
+import PylonConnector from "./PylonConnector";
 
 class App extends Component {
   render() {
@@ -14,6 +15,9 @@ class App extends Component {
         </Exhibit>
         <Exhibit name="Public IPV6's address">
           <Address url="https://api64.ipify.org?format=json"></Address>
+        </Exhibit>
+        <Exhibit name="Pylon Packet Latency">
+          <PylonConnector />
         </Exhibit>
       </div>
     );
